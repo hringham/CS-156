@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+/* 
+	This is the CSS file for the print styles of Hannah Ingham's ceramics website.
+	Author: Hannah Ingham
+	Date: 12.12.2022
+	Filename: hic_print.css
+*/
+
+nav, header, fieldset, aside#links, img, figure {
+	display: none;
+}
+
+body {
+	width: 100%;
+}
+
+@page {
+	size: 8.5in 11in;
+	margin: 0.5in;
+}	
+
+h2 {
+	font-size: 30pt;
+	margin: 0.15in;
+}
+
+h3 {
+ 	font-size: 20pt;
+ 	margin: 0.10in;
+}
+
+a::after {
+	content: " (" attr(href) ") ";
+	font-style: italic;
+}
+
+hr {
+	display: none;
+	page-break-after: auto;
+}
+
+h3 {
+	page-break-after: avoid;
+}
+
+p {
+	page-break-inside: avoid;
+	widows: 3;
+}
