@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* 
+	This is the CSS file for the basic layout of Hannah Ingham's tile triptych page.
+	Author: Hannah Ingham
+	Date: 12.06.2022
+	Filename: hic_tile_layout1.css
+*/
+
+p::first-letter {
+	font-size: 4em;
+	float: left;
+	line-height: 0.8;
+}
+
+section#inspo div a img {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}	
